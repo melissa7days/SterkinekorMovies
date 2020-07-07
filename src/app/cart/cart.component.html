@@ -22,7 +22,7 @@
         <h5 style="text-align: center;color: grey;font-family: Montserrat,sans-serif; text-transform: uppercase; font-size: 12px;">You have not selected any tickets</h5>
       </div>
       <p style="text-align: right; font-weight: 600; font-family: Montserrat,sans-serif; margin-top: 10px; font-size: 16px;" *ngIf="count > 0">Total Cost : R {{total}}</p>
-      <a style="font-family: Montserrat,sans-serif; border: 1px solid rgb(30, 150, 0); " class="btn btn-outline-secondary mt-2" *ngIf="count > 0" (click)="addToCart()"><strong>Add toCart</strong></a>
+      <a style="font-family: Montserrat,sans-serif; border: 1px solid rgb(30, 150, 0); " class="btn btn-outline-secondary mt-2" *ngIf="count > 0" (click)="addToCart()"><strong>Add To Cart</strong></a>
       <a href="" style="font-family: Montserrat,sans-serif; border: 1px solid red; " class="btn btn-outline-secondary mt-2" *ngIf="count > 0" (click)="clearCart()"><strong>Clear Cart</strong></a>
     </div>
   </div>
