@@ -40,11 +40,14 @@ export class CartComponent implements OnInit {
   }
   addToCart(){
     console.log(this.item);
-    this.http.post<Cart[]>('http://localhost:56236/api/item', this.item).subscribe(()=>{}); 
+    var item = this.http.post<Cart[]>('http://localhost:56236/api/item', this.item).subscribe(()=>{}); 
     this.http.post<CartLogic>('http://localhost:56236/api/cart', {finalTotal:this.total}).subscribe(data =>{
       console.log(data);
       this.cartId = data.cartId;
+      window.alert("Tickets successfully added to cart!");
+
     })
+    
   }
   removeItem(item:any) : void {
     this.cartService.removeItem(item);
