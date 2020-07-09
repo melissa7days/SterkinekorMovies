@@ -16,7 +16,6 @@ import { MainComponent } from './main/main.component';
 import { MovieDetailsComponent } from './movie-details/movie-details.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-import { PayComponent } from './pay/pay.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +26,6 @@ import { PayComponent } from './pay/pay.component';
     CartComponent,
     MainComponent,
     MovieDetailsComponent,
-    PayComponent,
   ],
   imports: [
     BrowserModule,

@@ -44,7 +44,7 @@ export class CartComponent implements OnInit {
     this.http.post<CartLogic>('http://localhost:56236/api/cart', {finalTotal:this.total}).subscribe(data =>{
       console.log(data);
       this.cartId = data.cartId;
-      window.alert("Tickets successfully added to cart!");
+      window.alert("Your tickets have been added, you can now checkout!");
 
     })
     
